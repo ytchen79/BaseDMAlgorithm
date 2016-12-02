@@ -5,18 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a3f1816-9ac8-4c5f-87f8-311d1895bf7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithm/KNN/KNNNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithm/KNN/TestKNN.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/data/datafile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/data/testfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BaseDMAlgorithm.iml" afterPath="$PROJECT_DIR$/BaseDMAlgorithm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ds/KDTree.java" afterPath="$PROJECT_DIR$/src/main/java/ds/KDTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/algorithm/KNN/KNN.java" afterPath="$PROJECT_DIR$/src/main/java/algorithm/KNN/KNN.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BaseDMAlgorithm.iws" />
@@ -33,7 +21,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="E:\java\workspace2\BaseDMAlgorithm" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -51,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KNN.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KNN.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KNN/KNN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76645434">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#432#671#0" expanded="true" />
@@ -64,6 +52,33 @@
                 <element signature="e#1789#1798#0" expanded="true" />
                 <element signature="e#2838#2855#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kmeans.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KMeans/Kmeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.7672956">
+              <caret line="251" column="39" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#3248#3268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestKmeans.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KMeans/TestKmeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KNN/KNNNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
                 <element signature="e#493#494#0" expanded="true" />
                 <element signature="e#521#522#0" expanded="true" />
@@ -167,6 +182,8 @@
         <option value="$PROJECT_DIR$/src/main/java/algorithm/KNN/testfile" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/KNN/TestKNN.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/KNN/KNN.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/KMeans/TestKmeans.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/KMeans/Kmeans.java" />
       </list>
     </option>
   </component>
@@ -371,6 +388,10 @@
               <option name="myItemId" value="algorithm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KMeans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -501,7 +522,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Application.TestKNN">
+  <component name="RunManager" selected="Application.TestKmeans">
     <configuration default="false" name="KDTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ds.KDTree" />
       <option name="VM_PARAMETERS" />
@@ -518,6 +539,20 @@
     </configuration>
     <configuration default="false" name="TestKNN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithm.KNN.TestKNN" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BaseDMAlgorithm" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestKmeans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.KMeans.TestKmeans" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -606,14 +641,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.KDTree" />
       <item index="1" class="java.lang.String" itemvalue="Application.TestKNN" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestKmeans" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestKNN" />
-        <item index="1" class="java.lang.String" itemvalue="Application.KDTree" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestKmeans" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestKNN" />
+        <item index="2" class="java.lang.String" itemvalue="Application.KDTree" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -635,12 +672,25 @@
       <updated>1479805734999</updated>
       <workItem from="1479805738355" duration="3715000" />
       <workItem from="1479816346098" duration="274000" />
-      <workItem from="1479816701381" duration="15998000" />
+      <workItem from="1479816701381" duration="19345000" />
     </task>
+    <task id="LOCAL-00001" summary="KNN算法实现">
+      <created>1480662977017</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480662977017</updated>
+    </task>
+    <task id="LOCAL-00002" summary="K means算法实现">
+      <created>1480666592579</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480666592579</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19987000" />
+    <option name="totallyTimeSpent" value="23334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
@@ -654,7 +704,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10872483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10738255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -707,6 +757,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="KNN算法实现" />
+    <MESSAGE value="K means算法实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="K means算法实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -828,7 +883,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KNN/KNNNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="e#493#494#0" expanded="true" />
             <element signature="e#521#522#0" expanded="true" />
@@ -848,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KNN/KNN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76645434">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#432#671#0" expanded="true" />
@@ -857,6 +912,29 @@
             <element signature="e#878#887#0" expanded="true" />
             <element signature="e#1789#1798#0" expanded="true" />
             <element signature="e#2838#2855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KMeans/TestKmeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/KMeans/Kmeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7672956">
+          <caret line="251" column="39" selection-start-line="251" selection-start-column="30" selection-end-line="251" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#3248#3268#0" expanded="true" />
           </folding>
         </state>
       </provider>
