@@ -14,44 +14,44 @@ import java.util.Comparator;
 public class KDTree {
 
     /**
-     * KDÊ÷µÄ½ÚµãÄÚ²¿Àà
+     * KDæ ‘çš„èŠ‚ç‚¹å†…éƒ¨ç±»
      */
     public static class KDNode{
         /**
-         * kdÊ÷µÄ×ó½Úµã
+         * kdæ ‘çš„å·¦èŠ‚ç‚¹
          */
         private KDNode left=null;
         /**
-         * kdÊ÷µÄÓÒ½Úµã
+         * kdæ ‘çš„å³èŠ‚ç‚¹
          */
         private KDNode right=null;
         /**
-         * ±íÊ¾KDÊ÷µÄ·Ö¸îÎ¬¶È
+         * è¡¨ç¤ºKDæ ‘çš„åˆ†å‰²ç»´åº¦
          */
         public int dim;
         /**
-         * ±íÊ¾KDÊ÷µÄ·Ö¸îÎ¬¶ÈµÄÖµ
+         * è¡¨ç¤ºKDæ ‘çš„åˆ†å‰²ç»´åº¦çš„å€¼
          */
         public double splitValue;
         /**
-         * ÔÚÕâ¸ö·Ö¸îÎ¬¶ÈµÄÊıÖµÊı×é£¬ÒòÎªÓĞºÜ¶àµãµÄ·Ö¸îµÄÖµ¶¼ÊÇÒ»ÑùµÄ
+         * åœ¨è¿™ä¸ªåˆ†å‰²ç»´åº¦çš„æ•°å€¼æ•°ç»„ï¼Œå› ä¸ºæœ‰å¾ˆå¤šç‚¹çš„åˆ†å‰²çš„å€¼éƒ½æ˜¯ä¸€æ ·çš„
          */
         public ArrayList<Data> nodes;
         /**
-         * ×ó±ßÉĞÎ´·Ö¸îµÄÖµ
+         * å·¦è¾¹å°šæœªåˆ†å‰²çš„å€¼
          */
         public ArrayList<Data> leftUnClassifyNode;
         /**
-         * ÓÒ±ßÉĞÎ´·Ö¸îµÄÖµ
+         * å³è¾¹å°šæœªåˆ†å‰²çš„å€¼
          */
         public ArrayList<Data> rightUnClassifyNode;
         /**
-         * KDnode½Úµã¹¹ÔìÆ÷
-         * @param node Õâ¸ö½ÚµãµÄÊı¾İ
-         * @param left ×ó±ßÃ»ÓĞ·ÖÀàµÄÊı¾İ
-         * @param right ÓÒ±ß»¹Ã»ÓĞ·ÖÀàµÄÊı¾İ
-         * @param dim ·ÖÀàµÄÎ¬¶È
-         * @param splitValue ·ÖÀàµÄÊıÖµ
+         * KDnodeèŠ‚ç‚¹æ„é€ å™¨
+         * @param node è¿™ä¸ªèŠ‚ç‚¹çš„æ•°æ®
+         * @param left å·¦è¾¹æ²¡æœ‰åˆ†ç±»çš„æ•°æ®
+         * @param right å³è¾¹è¿˜æ²¡æœ‰åˆ†ç±»çš„æ•°æ®
+         * @param dim åˆ†ç±»çš„ç»´åº¦
+         * @param splitValue åˆ†ç±»çš„æ•°å€¼
          */
         public KDNode(ArrayList<Data> node,ArrayList<Data> left,ArrayList<Data> right,int dim,double splitValue){
             this.nodes=node;
@@ -78,15 +78,15 @@ public class KDTree {
             for(Data data:nodes){
                 string += Arrays.toString(data.innerData)+"  ";
             }
-            string +="\n ·Ö¸îÖµ"+splitValue;
-            string +="\n ·Ö¸îÖá"+dim;
+            string +="\n åˆ†å‰²å€¼"+splitValue;
+            string +="\n åˆ†å‰²è½´"+dim;
             return string;
         }
 
     }
 
     /**
-     * Ê÷½ÚµãÄÚ²¿´æ´¢µÄÊı¾İ
+     * æ ‘èŠ‚ç‚¹å†…éƒ¨å­˜å‚¨çš„æ•°æ®
      */
     public static class Data{
         @Override
@@ -101,13 +101,13 @@ public class KDTree {
     }
 
     /**
-     * ½Úµã±È½ÏÆ÷£¬Í¨¹ıÊäÈë²»Í¬µÄÎ¬¶È½øĞĞ±È½Ï
+     * èŠ‚ç‚¹æ¯”è¾ƒå™¨ï¼Œé€šè¿‡è¾“å…¥ä¸åŒçš„ç»´åº¦è¿›è¡Œæ¯”è¾ƒ
      */
     private class DataComparator implements Comparator<Data> {
         public int dim=0;
         /**
-         * ÊäÈëÎ¬¶È¹¹ÔìÆ÷
-         * @param dim ĞèÒª±È½ÏµÄÎ¬¶È
+         * è¾“å…¥ç»´åº¦æ„é€ å™¨
+         * @param dim éœ€è¦æ¯”è¾ƒçš„ç»´åº¦
          */
         public DataComparator(int dim) {
             this.dim=dim;
@@ -126,29 +126,30 @@ public class KDTree {
         }
     }
     /**
-     * ±íÊ¾Êı×éÓĞ¶àÉÙÎ¬
+     * è¡¨ç¤ºæ•°ç»„æœ‰å¤šå°‘ç»´
      */
     private int dimension;
     /**
-     * ±íÊ¾¸ù½Úµã
+     * è¡¨ç¤ºæ ¹èŠ‚ç‚¹
      */
     private KDNode rootNode;
     /**
-     * ĞèÒª½øĞĞ·ÖÀàµÄµãµÄ¼¯ºÏ
+     * éœ€è¦è¿›è¡Œåˆ†ç±»çš„ç‚¹çš„é›†åˆ
      */
     private ArrayList<Data> list=new ArrayList<Data>();
     /**
-     * ÊÇ·ñÏà½»µÄÅĞ¶Ï£¬Èç¹ûÏà½»£¬¾Í·µ»ØÁíÒ»±ßµÄ½Úµã½øĞĞÇó½â
-     * @param node  ĞèÒªÅĞ¶ÏµÄ·Ö¸ôÆ÷
-     * @param data ĞèÒªÅĞ¶ÏµÄÊı¾İ
-     * @param dim ÅĞ¶ÏµÄÎ¬¶È
-     * @param value ÅĞ¶ÏµÄÊıÖµ
-     * @return Ïà½»µÄÁíÒ»±ßµÄ·ÖÀàµã
+     * æ˜¯å¦ç›¸äº¤çš„åˆ¤æ–­ï¼Œå¦‚æœç›¸äº¤ï¼Œå°±è¿”å›å¦ä¸€è¾¹çš„èŠ‚ç‚¹è¿›è¡Œæ±‚è§£
+     * @param node  éœ€è¦åˆ¤æ–­çš„åˆ†éš”å™¨
+     * @param data éœ€è¦åˆ¤æ–­çš„æ•°æ®
+     * @param dim åˆ¤æ–­çš„ç»´åº¦
+     * @param value åˆ¤æ–­çš„æ•°å€¼
+     * @return ç›¸äº¤çš„å¦ä¸€è¾¹çš„åˆ†ç±»ç‚¹
      */
     private KDNode isInterset(KDNode node,Data data,int dim,double value){
-        //½øĞĞÆ¥Åä£¬±íÊ¾Ïà½»
-        if(Math.abs(data.innerData[dim]-node.nodes.get(0).innerData[dim])<value){
-            //Ïà½»Ö®ºó¾ö¶¨ÊÇ½øÈë×ó½Úµã»¹ÊÇÓÒ½Úµã
+        //è¿›è¡ŒåŒ¹é…ï¼Œè¡¨ç¤ºç›¸äº¤
+        double dis=data.innerData[dim]-node.nodes.get(0).innerData[dim];
+        if( Math.abs(dis)<value){
+            //ç›¸äº¤ä¹‹åå†³å®šæ˜¯è¿›å…¥å·¦èŠ‚ç‚¹è¿˜æ˜¯å³èŠ‚ç‚¹
             if(data.innerData[dim]>node.nodes.get(0).innerData[dim]&&node.left!=null){
                 return node.left;
             }
@@ -159,10 +160,10 @@ public class KDTree {
         return null;
     }
     /**
-     * ¼ÆËãÄÇÁ½¸öÊı¾İµÄ¾àÀë
-     * @param data1 Êı¾İ1
-     * @param data2 Êı¾İ2
-     * @return ¾àÀë
+     * è®¡ç®—é‚£ä¸¤ä¸ªæ•°æ®çš„è·ç¦»
+     * @param data1 æ•°æ®1
+     * @param data2 æ•°æ®2
+     * @return è·ç¦»
      */
     private double calDistance(Data data1,Data data2){
         double dis=0;
@@ -172,17 +173,17 @@ public class KDTree {
         return Math.sqrt(dis);
     }
     /**
-     * Êı¹¹ÔìÆ÷
-     * @param list ĞèÒª¹¹ÔìKDÊ÷µÄÊı¾İ
+     * æ•°æ„é€ å™¨
+     * @param list éœ€è¦æ„é€ KDæ ‘çš„æ•°æ®
      */
     public KDTree( ArrayList<Data> list){
         this.list=list;
         dimension=list.get(0).innerData.length;
     }
     /**
-     * ĞèÒªÔÚKDÊ÷ÀïÃæËÑË÷Ä³¸öÊı¾İ
-     * @param data ĞèÒªËÑË÷µÄÊı¾İ
-     * @return ×î¿¿½üµÄ½Úµã
+     * éœ€è¦åœ¨KDæ ‘é‡Œé¢æœç´¢æŸä¸ªæ•°æ®
+     * @param data éœ€è¦æœç´¢çš„æ•°æ®
+     * @return æœ€é è¿‘çš„èŠ‚ç‚¹
      */
     public KDNode searchNearestNode(Data data){
         ArrayList<KDNode> nodeList=new ArrayList<KDNode>();
@@ -192,24 +193,26 @@ public class KDTree {
         while(nodeList.size()!=0){
             KDNode node=nodeList.get(0);
             nodeList.remove(0);
-            if(value>calDistance(data, node.nodes.get(0))){
-                value=calDistance(data, node.nodes.get(0));
+            double distance=calDistance(data, node.nodes.get(0));
+            if(value>distance){
+                value=distance;
                 nearestNode=node;
             }
             KDNode intersetNode=isInterset(node, data, node.dim, value);
+            printKDNode(intersetNode);
             if (intersetNode!=null) {
                 findNodeAndRecord(data, intersetNode, nodeList);
             }
 
         }
-        System.out.println("×î½ü¾àÀëÊÇ"+value);
+        System.out.println("æœ€è¿‘è·ç¦»æ˜¯"+value);
         return nearestNode;
     }
 
 
     /**
-     * ³õÊ¼»¯KDÊ÷
-     * @return ÊÇ·ñ³É¹¦
+     * åˆå§‹åŒ–KDæ ‘
+     * @return æ˜¯å¦æˆåŠŸ
      */
     public boolean initKDTree(){
         setRootNode(divideTree(list,0));
@@ -217,7 +220,7 @@ public class KDTree {
     }
 
     /**
-     * ´òÓ¡KDnode½ÚµãµÄÁĞ±íÖµ
+     * æ‰“å°KDnodeèŠ‚ç‚¹çš„åˆ—è¡¨å€¼
      * @param nodeList
      */
     public static void  printKDNodeList(ArrayList<KDNode> nodeList){
@@ -226,8 +229,8 @@ public class KDTree {
         }
     }
     /**
-     * ´òÓ¡KDnode½Úµã
-     * @param node ´òÓ¡½Úµã
+     * æ‰“å°KDnodeèŠ‚ç‚¹
+     * @param node æ‰“å°èŠ‚ç‚¹
      */
     public static void printKDNode(KDNode node){
         System.out.println(node);
@@ -243,7 +246,7 @@ public class KDTree {
         printTree(node.right);
     }
     /**
-     * ¶ş²æKDÊ÷²éÕÒÊôÓÚËûµÄµã
+     * äºŒå‰KDæ ‘æŸ¥æ‰¾å±äºä»–çš„ç‚¹
      * @param data
      * @return
      */
@@ -251,7 +254,7 @@ public class KDTree {
         return findNode(data, rootNode);
     }
     /**
-     * ¶ş²æKDÊ÷²éÕÒÊôÓÚËûµÄµã
+     * äºŒå‰KDæ ‘æŸ¥æ‰¾å±äºä»–çš„ç‚¹
      *
      *
      */
@@ -273,11 +276,11 @@ public class KDTree {
         return node;
     }
     /**
-     * ÕÒµ½ËûµÄµã²¢ÇÒ½øĞĞ¼ÇÂ¼²éÕÒµÄ¹ı³Ì
-     * @param data ĞèÒª²éÕÒµÄµã
-     * @param node ĞèÒª²éÕÒµÄÆğÊ¼µã
-     * @param list ²éÕÒÂ·³Ì
-     * @return ×îÖÕ½Úµã
+     * æ‰¾åˆ°ä»–çš„ç‚¹å¹¶ä¸”è¿›è¡Œè®°å½•æŸ¥æ‰¾çš„è¿‡ç¨‹
+     * @param data éœ€è¦æŸ¥æ‰¾çš„ç‚¹
+     * @param node éœ€è¦æŸ¥æ‰¾çš„èµ·å§‹ç‚¹
+     * @param list æŸ¥æ‰¾è·¯ç¨‹
+     * @return æœ€ç»ˆèŠ‚ç‚¹
      */
     public KDNode findNodeAndRecord(Data data,KDNode node,ArrayList<KDNode> list){
         while(true){
@@ -306,20 +309,20 @@ public class KDTree {
     }
 
     /**
-     * ´òÓ¡³ÉÁĞµÄÊı¾İ
-     * @param list ĞèÒª´òÓ¡µÄlistµÄÊı¾İ
+     * æ‰“å°æˆåˆ—çš„æ•°æ®
+     * @param list éœ€è¦æ‰“å°çš„listçš„æ•°æ®
      */
     private void printList(ArrayList<Data> list){
         System.out.print(Arrays.toString(list.get(0).innerData));
     }
     /**
-     * ½«×Ó½Úµã½øĞĞ·ÖÀà£¬²¢ÇÒ½øĞĞ·Ö³ÉÊ÷
-     * @param data ĞèÒª·ÖÀàµÄµã
-     * @param dim ÔÚÄÄ¸öÎ¬¶È½øĞĞ·ÖÀà
-     * @return ½Úµã
+     * å°†å­èŠ‚ç‚¹è¿›è¡Œåˆ†ç±»ï¼Œå¹¶ä¸”è¿›è¡Œåˆ†æˆæ ‘
+     * @param data éœ€è¦åˆ†ç±»çš„ç‚¹
+     * @param dim åœ¨å“ªä¸ªç»´åº¦è¿›è¡Œåˆ†ç±»
+     * @return èŠ‚ç‚¹
      */
     private KDNode divideTree(ArrayList<Data> data,int dim){
-        //ÕÒµ½ÖĞÎ»Êı¼°ÄÇ¼¸¸öÊı
+        //æ‰¾åˆ°ä¸­ä½æ•°åŠé‚£å‡ ä¸ªæ•°
         DataComparator compare=new DataComparator(dim);
         Collections.sort(data, compare);
         int middle=data.size()/2;
@@ -355,13 +358,13 @@ public class KDTree {
     }
 
     /**
-     * ½øĞĞ²âÊÔ
+     * è¿›è¡Œæµ‹è¯•
      * @param args
      */
     public static void main(String[] args) {
         ArrayList<Data> arrayList=new ArrayList<Data>();
         Data data1=new Data(new double[]{2,3});
-        Data data2=new Data(new double[]{3,3});
+        Data data2=new Data(new double[]{5,4});
         Data data3=new Data(new double[]{9,6});
         Data data4=new Data(new double[]{4,7});
         Data data5=new Data(new double[]{8,1});
@@ -375,9 +378,12 @@ public class KDTree {
         KDTree tree=new KDTree(arrayList);
         tree.initKDTree();
         ArrayList<KDNode> nodeList=new ArrayList<KDNode>();
-        tree.findNodeAndRecord(new Data(new double[]{9,1}), tree.rootNode,nodeList);
-        System.out.println("ĞèÒª¼ì²âµÄµãÊÇ"+new Data(new double[]{9,2}));
-        System.out.println(tree.searchNearestNode(new Data(new double[]{9,2})));
+        tree.findNodeAndRecord(new Data(new double[]{2,4.5}), tree.rootNode,nodeList);
+//        System.out.println("==");
+//        printKDNodeList(nodeList);
+//        System.out.println("==");
+//        System.out.println("éœ€è¦æ£€æµ‹çš„ç‚¹æ˜¯"+new Data(new double[]{2.1,3.1}));
+        System.out.println(tree.searchNearestNode(new Data(new double[]{2,4.5})));
     }
 
 }
