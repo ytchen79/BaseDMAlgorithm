@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /**
- * @Description: TODO
+ * @Description: KD树实现1
  * @Function List: TODO
  * @author: ytchen
  * @Date: 2016/11/21

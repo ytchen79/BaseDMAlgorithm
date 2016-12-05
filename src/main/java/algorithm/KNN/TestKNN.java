@@ -44,6 +44,10 @@ public class TestKNN {
      * @param args
      */
     public static void main(String[] args) {
+
+    }
+
+    private static void testKnn(){
         TestKNN t = new TestKNN();
         String datafile = new File("").getAbsolutePath() + File.separator + "src\\test\\data\\datafile";
         String testfile = new File("").getAbsolutePath() + File.separator + "src\\test\\data\\testfile";
@@ -67,5 +71,6 @@ public class TestKNN {
             e.printStackTrace();
         }
     }
+
 }
 
